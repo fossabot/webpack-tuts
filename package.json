@@ -1,0 +1,17 @@
+{
+  "name": "webpack-tuts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kuppakoffe/webpack-tuts.git",
+  "author": "Sumit Gupta <sumitbuknp@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified \" && exit 1",
+    "build": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js --compress",
+    "build:prod": "webpack src/js/app.js dist/bundle.js -p"
+  }
+}
